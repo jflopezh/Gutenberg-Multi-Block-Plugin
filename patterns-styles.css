@@ -1,0 +1,76 @@
+/* General Styles */
+
+:root {
+    --section-vertical-padding: 50px;
+    --section-horizontal-padding: 10vw;
+}
+
+section.g-block-pattern.wp-block-group {
+    padding: 0;
+}
+
+.g-block-pattern .wp-block-columns.alignfull {
+    --wp--style--block-gap: 0;
+    gap: 0 !important;
+    padding: 0 !important;
+}
+
+/* Full Screen Login */
+
+.g-blocks-full-screen-login .wp-block-columns {
+    height: 100vh;
+}
+
+.g-blocks-full-screen-login .wp-block-columns .wp-block-column .wp-block-cover {
+    padding: var(--section-vertical-padding);
+    height: 100vh;
+}
+
+.g-blocks-full-screen-login .wp-block-columns .login-column:first-child {
+    padding: var(--section-vertical-padding);
+    padding-left: var(--section-horizontal-padding);
+}
+
+.g-blocks-full-screen-login .wp-block-columns .login-column:last-child {
+    padding: var(--section-vertical-padding);
+    padding-right: var(--section-horizontal-padding);
+}
+
+/* Hero */
+
+.g-blocks-hero .wp-block-cover {
+    padding: var(--section-vertical-padding) var(--section-horizontal-padding) !important;
+}
+
+/* Two Column Content Section with Image */
+
+.g-blocks-two-column-content-img .wp-block-columns .wp-block-column:first-child {
+    padding: var(--section-vertical-padding);
+    padding-right: calc(var(--section-vertical-padding) / 2); 
+    padding-left: var(--section-horizontal-padding);    
+}
+
+.g-blocks-two-column-content-img .wp-block-columns .wp-block-column:last-child {
+    padding: var(--section-vertical-padding);
+    padding-right: var(--section-horizontal-padding);  
+    padding-left: calc(var(--section-vertical-padding) / 2);   
+}
+
+
+/* Two Column Content Section with Full Cover Image */
+
+.g-blocks-two-column-content-fullimg .wp-block-columns .wp-block-column:not(.image-column):first-child {
+    padding: var(--section-vertical-padding);
+    padding-right: var(--section-vertical-padding); 
+    padding-left: var(--section-horizontal-padding);   
+}
+
+.g-blocks-two-column-content-fullimg .wp-block-columns .wp-block-column:not(.image-column):last-child {
+    padding: var(--section-vertical-padding);
+    padding-right: var(--section-horizontal-padding);  
+    padding-left: var(--section-vertical-padding);   
+}
+
+.g-blocks-two-column-content-fullimg .wp-block-columns .wp-block-column.image-column .wp-block-cover {
+    padding: var(--section-vertical-padding);
+}

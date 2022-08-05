@@ -1,0 +1,24 @@
+{
+  	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "create-block/login",
+	"version": "1.0.0",
+	"title": "Login",
+	"category": "widgets",
+	"icon": "users",
+	"description": "Login and registration forms.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "login",
+	"editorScript": "file:../../../build/js/login/login.js",
+	"editorStyle": "file:../../../build/css/login.css",
+	"style": "file:../../../build/css/style-login.css",
+	"attributes": {
+		"showImg": { "type": "boolean", "default": true },
+		"imageHeight": { "type": "string", "default": "250px" },
+		"img": { "type": "string", "default": "" },
+		"borderRadius": { "type": "string", "default": "10px" },
+		"bgColor": { "type": "string", "default": "#fff0" }
+	}
+}

@@ -1,0 +1,30 @@
+div.card-wrapper {
+	margin: 20px;
+	contain: content;
+
+	.card-image {
+		display: flex;
+		position: relative;
+		align-items: center;
+		width: 100%;
+		height: 200px;
+		background: #ccc;
+		contain: paint;
+
+		img.img {
+			position: relative;
+			left: -2px;
+			max-width: unset;
+			width: calc(100% + 4px);
+			height: 101%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+
+	div.card-content {
+		display: flex;
+		flex-direction: column;
+		padding: 30px;
+	}
+}

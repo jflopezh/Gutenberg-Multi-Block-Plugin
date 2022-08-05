@@ -1,0 +1,30 @@
+{
+  	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "create-block/card",
+	"version": "1.0.0",
+	"title": "Card",
+	"category": "widgets",
+	"icon": "id-alt",
+	"description": "Create a card with image, heading, paragraph and button, to display content in a beautiful layout.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "card",
+	"editorScript": "file:../../../build/js/card/card.js",
+	"editorStyle": "file:../../../build/css/card.css",
+	"style": "file:../../../build/css/style-card.css",
+	"attributes": {
+		"style": { "type": "string", "default": "style1" },
+		"showImg": { "type": "boolean", "default": true },
+		"imageHeight": { "type": "string", "default": "250px" },
+		"imageWidth": { "type": "string", "default": "100%" },
+		"imageAlign": { "type": "string", "default": "center" },
+		"img": { "type": "string", "default": "" },
+		"borderRadius": { "type": "string", "default": "10px" },
+		"bgColor": { "type": "string", "default": "#fff0" },
+		"contentSpacing": { "type": "string", "default": "20px" },
+		"padding": { "type": "string", "default": "30px" },
+		"boxShadow": { "type": "boolean", "default": true }
+	}
+}
